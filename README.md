@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Python library provides implementations of contextual multi-armed bandit algorithms, including LinUCB and Epsilon-Greedy strategies. It is designed for easy integration into reinforcement learning systems that require decision-making under uncertainty with contextual information.
+A comprehensive Python library implementing a variety of contextual and non-contextual multi-armed bandit algorithms—including LinUCB, Epsilon-Greedy, Upper Confidence Bound (UCB), Thompson Sampling, KernelUCB, NeuralLinearBandit, and DecisionTreeBandit—designed for reinforcement learning applications that require decision-making under uncertainty with or without contextual information.
 
 <p align="center">
 <a href="https://github.com/singhsidhukuldeep/contextual-bandits"><img src="./Contextual Bandit Algorithms.png" alt="contextual-bandits" width ="75%" /></a>
