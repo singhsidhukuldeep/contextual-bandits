@@ -4,35 +4,29 @@
 
 This Python library provides implementations of contextual multi-armed bandit algorithms, including LinUCB and Epsilon-Greedy strategies. It is designed for easy integration into reinforcement learning systems that require decision-making under uncertainty with contextual information.
 
-Features
---------
+<p align="center">
+<a href="https://github.com/singhsidhukuldeep/contextual-bandits"><img src="./Contextual Bandit Algorithms.png" alt="contextual-bandits" width ="75%" /></a>
+</p>
 
--   **Modular Design**: Base classes and methods allow for easy extension and customization.
--   **Algorithms Included**:
-    -   **Contextual Algorithms**:
-        -   **LinUCB**
-        -   **Epsilon-Greedy**
-        -   **KernelUCB**
-        -   **NeuralLinearBandit**
-        -   **DecisionTreeBandit**
-    -   **Non-Contextual Algorithms**:
-        -   **Upper Confidence Bound (UCB)**
-        -   **Thompson Sampling**
--   **Easy Integration**: Designed to work seamlessly with NumPy arrays and popular machine learning libraries.
+## Features
 
-- **Modular Design**: Base classes and methods allow for easy extension and customization.
-- **Algorithms Included**:
-  - **LinUCB**: Balances exploration and exploitation using upper confidence bounds.
-  - **Epsilon-Greedy**: Explores with a fixed probability.
-  - **UCB**: Non-contextual algorithm that selects arms based on upper confidence bounds.
-  - **Thompson Sampling**: Bayesian method for balancing exploration and exploitation.
-  - **KernelUCB**: Uses kernel methods to capture similarity in contexts.
-  - **NeuralLinear**: Neural network-based method for modeling complex reward functions.
-  - **Decision Tree Bandit**: Uses decision trees to partition the context space.
-- **Easy Integration**: Designed to work seamlessly with NumPy arrays and popular machine learning libraries.
+-   **Contextual Algorithms**:
+    -   **LinUCB**: Balances exploration and exploitation using linear regression with upper confidence bounds.
+    -   **Epsilon-Greedy**: Explores randomly with probability epsilon and exploits the best-known option otherwise.
+    -   **KernelUCB**: Uses kernel methods to capture non-linear relationships in the context space.
+    -   **NeuralLinearBandit**: Combines neural networks for feature extraction with linear models for prediction.
+    -   **DecisionTreeBandit**: Employs decision trees to model complex relationships between context and rewards.
+
+-   **Non-Contextual Algorithms**:
+    -   **Upper Confidence Bound (UCB)**: Selects arms based on upper confidence bounds of estimated rewards.
+    -   **Thompson Sampling**: Uses Bayesian methods to balance exploration and exploitation.
 
 
 ## Installation
+
+```bash
+pip install contextual-bandits-algos
+```
 
 ### Instructions to Use the Updated Library
 
@@ -81,12 +75,12 @@ Features
     for f in *.py; do echo "$f" & python "$f"; done
     ```
 
-Algorithms and Examples
------------------------
+## Algorithms and Examples
+
 
 Below are detailed descriptions of each algorithm, indicating whether they are contextual or non-contextual, how they work, and examples demonstrating their usage.
 
-### 1\. LinUCB
+### 1. LinUCB
 
 -   **Type**: Contextual
 -   **Description**: The LinUCB algorithm is a contextual bandit algorithm that uses linear regression to predict the expected reward for each arm given the current context. It balances exploration and exploitation by adding an upper confidence bound to the estimated rewards.
@@ -99,7 +93,7 @@ Below are detailed descriptions of each algorithm, indicating whether they are c
 
 
 
-### 2\. Epsilon-Greedy
+### 2. Epsilon-Greedy
 
 -   **Type**: Contextual
 -   **Description**: The Epsilon-Greedy algorithm selects a random arm with probability `epsilon` (exploration) and the best-known arm with probability `1 - epsilon` (exploitation). It uses the context to predict rewards for each arm.
@@ -112,7 +106,7 @@ Below are detailed descriptions of each algorithm, indicating whether they are c
 
 
 
-### 3\. Upper Confidence Bound (UCB)
+### 3. Upper Confidence Bound (UCB)
 
 -   **Type**: Non-Contextual
 -   **Description**: The UCB algorithm selects arms based on upper confidence bounds of the estimated rewards, without considering any context. It is suitable when no contextual information is available.
@@ -125,7 +119,7 @@ Below are detailed descriptions of each algorithm, indicating whether they are c
 
 
 
-### 4\. Thompson Sampling
+### 4. Thompson Sampling
 
 -   **Type**: Non-Contextual
 -   **Description**: Thompson Sampling is a Bayesian algorithm that selects arms based on samples drawn from the posterior distributions of the arm's reward probabilities.
@@ -138,7 +132,7 @@ Below are detailed descriptions of each algorithm, indicating whether they are c
 
 
 
-### 5\. KernelUCB
+### 5. KernelUCB
 
 -   **Type**: Contextual
 -   **Description**: KernelUCB uses kernel methods to capture non-linear relationships between contexts and rewards. It extends the UCB algorithm to a kernelized context space.
@@ -151,7 +145,7 @@ Below are detailed descriptions of each algorithm, indicating whether they are c
 
 
 
-### 6\. NeuralLinearBandit
+### 6. NeuralLinearBandit
 
 -   **Type**: Contextual
 -   **Description**: NeuralLinearBandit uses a neural network to learn a representation of the context and then applies linear regression on the learned features.
@@ -163,7 +157,7 @@ Below are detailed descriptions of each algorithm, indicating whether they are c
 -   **Exploitation**: Uses the predicted rewards from the linear model.
 
 
-### 7\. DecisionTreeBandit
+### 7. DecisionTreeBandit
 
 -   **Type**: Contextual
 -   **Description**: The DecisionTreeBandit algorithm uses decision trees to model the relationship between context and rewards, allowing it to capture non-linear patterns.
