@@ -10,6 +10,8 @@ setup(
     packages=find_packages(),
     install_requires=[
         "numpy>=1.18.0",
+        "scikit-learn>=0.22.0",
+        "torch>=1.7.0",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
