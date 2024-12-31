@@ -1,12 +1,27 @@
-# Contextual Multi-Armed Bandits Library
+
+<h1 align="center">Contextual Multi-Armed Bandits Library</h1>
+
+<p align="center">
+<a href="https://github.com/singhsidhukuldeep/contextual-bandits"><img src="./Contextual Bandit Algorithms.png" alt="contextual-bandits" width ="75%" /></a>
+</p>
+
+<p align="center">
+A comprehensive Python library implementing a variety of contextual and non-contextual multi-armed bandit algorithms<br>
+<a href="https://pypi.org/project/contextual-bandits-algos/"><img src="https://img.shields.io/pypi/pyversions/contextual-bandits-algos" alt="Go to https://pypi.org/project/contextual-bandits-algos/"/></a>
+<a href="https://pypi.org/project/contextual-bandits-algos/"><img src="https://img.shields.io/pypi/v/contextual-bandits-algos" alt="Go to https://pypi.org/project/contextual-bandits-algos/"/></a>
+<a href="https://pypi.org/project/contextual-bandits-algos/"><img src="https://img.shields.io/pypi/status/contextual-bandits-algos" alt="Go to https://pypi.org/project/contextual-bandits-algos/"/></a>
+<!-- <a href="https://pypi.org/project/contextual-bandits-algos/"><img src="https://img.shields.io/pypi/format/contextual-bandits-algos" alt="Go to https://pypi.org/project/contextual-bandits-algos/"/></a> -->
+<!-- <a href="https://lgtm.com/projects/g/singhsidhukuldeep/contextual-bandits-algos/context:python"><img alt="Language grade: Python" src="https://img.shields.io/lgtm/grade/python/g/singhsidhukuldeep/contextual-bandits-algos.svg?logo=lgtm&logoWidth=18"/></a> -->
+<a href="https://pypistats.org/packages/contextual-bandits-algos"><img src="https://img.shields.io/pypi/dm/contextual-bandits-algos"/></a>
+<!-- <img src="https://visitor-badge.glitch.me/badge?page_id=request_boost" alt="Go to https://pypi.org/project/contextual-bandits-algos/"/> -->
+<img src="https://static.pepy.tech/personalized-badge/contextual-bandits-algos?period=total&units=none&left_color=black&right_color=brightgreen&left_text=Total%20Downloads" alt="Go to https://pypi.org/project/contextual-bandits-algos/"/>
+</p>
 
 ## Overview
 
 A comprehensive Python library implementing a variety of contextual and non-contextual multi-armed bandit algorithms—including LinUCB, Epsilon-Greedy, Upper Confidence Bound (UCB), Thompson Sampling, KernelUCB, NeuralLinearBandit, and DecisionTreeBandit—designed for reinforcement learning applications that require decision-making under uncertainty with or without contextual information.
 
-<p align="center">
-<a href="https://github.com/singhsidhukuldeep/contextual-bandits"><img src="./Contextual Bandit Algorithms.png" alt="contextual-bandits" width ="75%" /></a>
-</p>
+
 
 ## Features
 
@@ -167,3 +182,26 @@ Below are detailed descriptions of each algorithm, indicating whether they are c
 -   **Model**: Fits a decision tree regressor for each arm based on the observed contexts and rewards.
 -   **Exploration**: Relies on the decision tree's predictions; may require additional mechanisms for exploration.
 -   **Exploitation**: Selects the arm with the highest predicted reward.
+
+<h2 align="center">🌟⭐✨STAR ME✨⭐🌟</h2>
+
+<p align="center">
+  <b>You can give me a small 🤓 dopmaine 🤝 support by ⭐STARRING⭐ this project</b>
+  
+<img src="https://api.star-history.com/svg?repos=singhsidhukuldeep/contextual-bandits-algos&type=Date" width="70%" alt="🌟⭐✨STAR ME✨⭐🌟">
+</p>
+
+## Credits
+
+### Maintained by
+
+***Kuldeep Singh Sidhu*** 
+
+Github: [github/singhsidhukuldeep](https://github.com/singhsidhukuldeep)
+`https://github.com/singhsidhukuldeep`
+
+Website: [Kuldeep Singh Sidhu (Website)](http://kuldeepsinghsidhu.com)
+`http://kuldeepsinghsidhu.com`
+
+LinkedIn: [Kuldeep Singh Sidhu (LinkedIn)](https://www.linkedin.com/in/singhsidhukuldeep/)
+`https://www.linkedin.com/in/singhsidhukuldeep/`
